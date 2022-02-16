@@ -1,116 +1,610 @@
-main, header, footer, h1, #banner-heading, #google-map {
-display: flex;
-flex-direction: column; 
-align-items: center;
-justify-content: center;
-text-align: center;
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-background-color: white;
-
-}
-
-
-#banner-heading {
-    color: rgb(19, 68, 97);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-}
-
-
-#logo{
-width: 50%;
-align-items: center;
-
-}
-
-
-aside{
-animation: 3s ease-in 1s infinite reverse both running slidein;
-  
-
-}
-
-
-h2 {
-    color: rgb(19, 68, 97);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-  }
-
-
-.responsive-kate {
-    width: 80%;
-    height: 80%;
-
-  }
-
-  .responsive-stella {
-    width: 80%;
-    height: 80%;
-
-  }
-  .responsive-vida {
-    width: 80%;
-    height: 80%;
-
-  }
-  .responsive-fred {
-    width: 80%;
-    height: 80%;
-
-  }
-  .responsive-barry {
-    width: 80%;
-    height: 80%;
-
-  }
-
-.responsive-raintree {
-  width: 80%;
-  height: 80%;
-
-}
-
-
-.responsive-map{
-    width: 80%;
-    height: 400px;
-
-  }
-
-
-.fa-facebook {
-    background: #3B5998;
-    color: white;
-
-  }
-
-
-  .fa-instagram {
-    background: #125688;
-    color: white;
-
-  }
-
-
-  .fa {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 5px;
-    padding-right: 5px;
-    font-size: 30px;
-    width: 25px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 20%;
-
-  }
-  
-  
-p {
-    color: rgb(107, 16, 87);  
-
-  }
-
-
-
+        main, header, h1, h2, p, footer {
+          display: block;
+          width: 1000px;
+          max-width: 1000px;
+          margin:auto;
+          /*testing column count here and 1  on @media*/
+        
+          align-items: center;
+          text-align: center;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+          font-size: x-large;
+          background-color: white;
+          box-sizing: border-box;
+          }
+          
+          h1, h2 {
+              border:rgb(10, 65, 110) solid 1px;
+              color: darkmagenta;
+              border-radius: 50px; 
+              column-count: 1;
+          }
+          
+          a:hover
+          {
+            color: lightpink;
+          }
+          
+          
+          /*Can I made the nav bar horizontal when at desktop and list when on mobile (mobile instructions reflecting the way it looks now,in the media query so need to create instructions for desktop)does each nav id needs to be listed seperately for the hover and focus style to work as per a above*/
+          
+          /*nav desktop style*/
+          
+          .column {
+              width: 1000px;
+              max-width: 1000px;
+              box-sizing: border-box;
+              margin-left: 50px;
+              margin-top: 20px;
+          }
+          
+          #nav-about, #nav-Kate, #nav-Stella, #nav-Vida, #nav-Barry, #nav-Raintree, #nav-google-map {
+          float: left;
+          background-color: rgb(162, 204, 198);
+          border: black solid 1px;
+          border-radius: 50px;
+          /* padding: 20px; */
+          margin: 10px;
+          /* box-sizing: border-box; */
+          max-width: 100px;
+          width: 100px;
+          font-size:small;
+          column-count: 1;
+          }
+          
+          #logo {
+            float:left;
+            width:500px;
+            max-width:500px;
+            box-sizing: border-box;
+          }
+          
+          aside { 
+            float: left;
+            width:400px;
+            max-width:500px;
+            margin-top: 150px;
+            font-size:larger;
+            padding:15px;
+            border-radius: 25px;
+            border: grey solid 2px;
+            box-sizing: border-box;
+            background-color: rgb(162, 204, 198);
+          }
+          
+          aside:hover {
+            background-color: lightpink;
+            }
+          
+            /*keep*/
+            #asideText {
+              text-align: center;
+            }
+          
+          p {
+              column-count: 1;
+            color: black;  
+            width:1000px;
+            max-width:1000px;
+            text-align: center;
+            }
+          
+          .introBlurb {
+              column-count: 1;
+              width: 1000px;
+              max-width: 1000px;
+              text-align: center;
+              margin-top:20px;
+              margin-bottom: 20px;
+          }
+                      
+          /*when this is correct I can copy and paste for the 4 other artist sections -done*/
+          .Artist {   
+            max-width: 1000px;
+            width: 1000px;
+          
+            margin-bottom: 10px;
+            
+          }
+          .clearfix:after{
+             
+          content:"whatever";
+          display: block;
+          clear: both;
+          visibility: hidden ;
+          height: 0;
+          width:0;
+        } 
+          
+             
+          h2 {
+              margin-bottom:20px;
+              column-count: 1;
+              color: darkmagenta;
+              font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+              font-size: xx-large;
+          }
+      
+          
+          /*Started with individual IDs which I then converted to classes to keep the 5 artist sections consistent and reduce CSS*/
+          
+          .image1 {
+           column-count: 1;
+           clear:both;
+            float:left;
+            width:500px;
+            max-width:500px;
+            height:500px;
+          }
+      
+          .artBlurb {
+          margin-top:50px;
+          float: left;
+          width:480px;
+          max-width: 480px;
+          box-sizing: border-box;
+          }
+           /*each artwork caption to hover over it's own image- all need to be listed seperately*/
+      
+      /*Kate caption*/
+      
+      .Kate-artwork-image-wrap {
+          position: relative;
+          height: 50px;
+          width: 250px;
+          font-size: smaller;
+        }
+        
+        .KartworkCaption {
+          position: absolute;
+          top: 0;
+          left: 0;
+           width:500px;
+          background: rgba(29, 106, 154, 0.72);
+          color: #fff;
+          visibility: hidden;
+          opacity: 0;
+          /* transition effect. not necessary */
+          transition: opacity .2s, visibility .2s;
+        }
+        
+        .Kate-artwork-image-wrap:hover .KartworkCaption {
+          visibility: visible;
+          opacity: 1;
+        }
+        
+        /*Stella caption*/
+        
+        .Stella-artwork-image-wrap {
+          position: relative;
+          height: 50px;
+          width: 250px;
+          font-size: smaller;
+        }
+        
+        .SartworkCaption {
+          position: absolute;
+          top: 0;
+           left: 0;
+           width:500px;
+           background: rgba(29, 106, 154, 0.72);
+          color: #fff;
+          visibility: hidden;
+          opacity: 0;
+          /* transition effect */
+          transition: opacity .2s, visibility .2s;
+        }
+        
+        .Stella-artwork-image-wrap:hover .SartworkCaption {
+          visibility: visible;
+          opacity: 1;
+        }
+        
+        /*Vida caption*/
+        .Vida-artwork-image-wrap {
+          position: relative;
+          height: 50px;
+          width: 250px;
+          font-size: smaller;
+        }
+        
+        .VartworkCaption {
+          position: absolute;
+          top: 0;
+           left: 0;
+           width:500px;
+           background: rgba(29, 106, 154, 0.72);
+          color: #fff;
+          visibility: hidden;
+          opacity: 0;
+          /* transition effect */
+          transition: opacity .2s, visibility .2s;
+        }
+        
+        .Vida-artwork-image-wrap:hover .VartworkCaption {
+          visibility: visible;
+          opacity: 1;
+        }
+        
+        /*Barry caption*/
+        .Barry-artwork-image-wrap {
+          position: relative;
+          height: 50px;
+          width: 250px;
+          font-size: smaller;
+        }
+        
+        .BartworkCaption {
+          position: absolute;
+          top: 0;
+           left: 0;
+           width:500px;
+           background: rgba(29, 106, 154, 0.72);
+          color: #fff;
+          visibility: hidden;
+          opacity: 0;
+          /* transition effect */
+          transition: opacity .2s, visibility .2s;
+        }
+        
+        .Barry-artwork-image-wrap:hover .BartworkCaption {
+          visibility: visible;
+          opacity: 1;
+        }
+        
+        /*Raintree caption*/
+        .Raintree-artwork-image-wrap {
+          position: relative;
+          height: 50px;
+          width: 250px;
+          font-size: smaller;
+        }
+        
+        .RartworkCaption {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width:500px;
+          background: rgba(29, 106, 154, 0.72);
+          color: #fff;
+          visibility: hidden;
+          opacity: 0;
+          /* transition effect */
+          transition: opacity .2s, visibility .2s;
+        }
+        
+        .Raintree-artwork-image-wrap:hover .RartworkCaption {
+          visibility: visible;
+          opacity: 1;
+        }
+        /*end of hover testing*/
+          
+          h3 {
+              column-count:1;
+            float:left;
+            width: 450px;
+            max-width:450px;
+            color: darkmagenta;
+          }
+          
+          a {
+              column-count: 1;
+            float:left;
+            width:450px;
+            max-width:450px;
+          }
+          
+          
+          .website {
+              column-count: 1;
+            margin-top: 10px;
+            margin-bottom: 10px;
+          }
+          
+          /* this section is for the facebook and instagram logos. I also had to add the cloudflare stylesheet link to the html file <head> I've also added hover and focus to the attribute links above */
+          
+          .fa-facebook {
+            float: left;
+            background: #3B5998;
+            color: white;
+            margin: 20px 20px 20px 150px;
+          
+          }
+          
+          .fa-instagram {
+            float:left;
+            background: #125688;
+            color: white;
+            margin: 20px 20px 20px 50px;
+          
+          }
+          
+          .fa {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 5px;
+            padding-right: 5px;
+            font-size: 30px;
+            width: 30px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 20%;
+          }
+           
+             
+         
+          /*height of map is problem here - does it require a heading to pass html checks?*/
+          
+            .responsive-map {
+                column-count: 1;
+            float: left;
+            width:1000px;
+            max-width: 800px;
+            margin-left:100px;
+            }
+            
+            footer {
+                   column-count: 1;
+            }
+           
+           /*media queries*/
+           /*Media queries for Samsung Galaxy S8 (my phone) this is now working to change the 3 header items from a row to a column on mobile. */
+      
+      /*Keep - nav mobile style - no nav buttons except to the map - easy to scroll down looking at artists on phone*/
+      
+      @media only screen and (max-width: 360px) {
+        #nav-about, #nav-Kate, #nav-Stella, #nav-Vida, #nav-Barry, #nav-Raintree {
+          visibility: hidden;
+          width:0;
+          height:0;
+          margin:0;    
+        }
+      }
+      
+      /*keep logo at 100% on mobile - this is our brand*/
+      @media only screen and (max-width: 360px) {
+        #logo {
+            width:360px;
+            max-width: 360px;
+          clear: both;
+          z-index:0;
+        }
+      }
+      
+      /*Keep -just nav button to google map for mobile*/
+      @media only screen and (max-width: 360px) {
+        #nav-google-map {
+          background-color: rgb(162, 204, 198);
+          border: black solid 1px;
+          border-radius: 50px;
+          padding: 30px 10px 10px 10px;
+          margin: 5px;
+          box-sizing: border-box;
+          max-width:150px;
+          width:90px;
+          height: 90px;
+          z-index: 1;
+          position:absolute;
+          top: 20px;
+          right: 125px;
+      
+        }
+      }
+      
+      @media only screen and (max-width: 360px) {
+        aside {
+          width: 360px;
+          max-width: 350px;
+          /*testing margins was 65px*/
+          margin-left:1px;
+          margin-right:1px;
+          margin-top: 3px;
+          /*test - do I need these?*/
+          float: none;
+          clear: both;  
+          box-sizing: border-box;
+        }
+      }
+      
+      /*hiding the h1 title when on mobile*/
+        @media only screen and (max-width: 360px) {
+          h1 {
+            visibility:hidden;
+            margin:0;
+            width: 0;
+            max-width:0;
+            height: 0;
+          }
+      }
+      
+      
+      /* found issue here with 2 @media commands for h2 - this one is for h2 within Artist section so deleted the other h2 for the 'About us' section*/
+      
+      @media only screen and (max-width: 360px) {
+        h2 {
+           width: 360px;
+           max-width: 360px;
+           box-sizing: border-box;
+           float: none;
+           margin-left: 1px;
+           margin-top: 15px;
+         }
+         } 
+      
+      #introFirst {
+        text-align: center;
+        margin-left:1px;
+      }
+        
+      @media only screen and (max-width: 360px) {
+        #introFirst {
+        text-align: center;
+        font-size: smaller;
+        width:360px;
+        max-width: 360px;
+        margin-left:1px;
+             
+        }
+      }
+      
+      @media only screen and (max-width: 360px) {
+        #introSecond {
+          visibility: hidden;
+          height:0;
+          width:0;
+          margin:0;
+        }
+      }
+      
+      
+      @media only screen and (max-width: 360px) {
+          .artBlurb {
+          width: 360px;
+          max-width:360px;
+          clear: both;
+          margin-top: 5px;
+          margin-left: 1px;
+          font-size:smaller;
+          }
+          }
+      
+          /*test for artwork caption on mobile*/
+          @media only screen and (max-width: 360px) {
+            .KartworkCaption{
+                 position:absolute;
+                 width:auto;
+              margin: 0px;
+              font-size: small; 
+              
+            }
+            }
+            @media only screen and (max-width: 360px) {
+              .SartworkCaption{
+                   position:absolute;
+                   width:auto;
+                margin: 0px;
+                font-size: small; 
+                
+              }
+              }
+              @media only screen and (max-width: 360px) {
+                .VartworkCaption{
+                     position:absolute;
+                  width:auto;
+                  margin: 0px;
+                  font-size: small; 
+                  
+                }
+                }
+          
+                @media only screen and (max-width: 360px) {
+                  .BartworkCaption{
+                       position:absolute;
+                       width:auto;
+                   
+                    margin: 0px;
+                    font-size: small; 
+                    
+                  }
+                  }
+          
+          
+          @media only screen and (max-width: 360px) {
+            .RartworkCaption{
+              position:absolute;
+              width:auto;
+              
+              margin: 0px;
+              font-size: small; 
+              
+            }
+            }
+      
+            
+      /*put all @media queries after desktop down insturctions*/
+      @media only screen and (max-width: 360px) {
+          .image1 {
+            width: 360px;
+            max-width: 360px;
+            height:360px;
+            margin-left: 1px; 
+           }
+           } 
+            
+          @media only screen and (max-width: 360px) {
+            .fa-facebook {  
+              clear:both;
+              margin-top: 5px;
+              margin-left: 100px;
+              background:white;
+              color:#125688
+            }
+            }
+        
+        @media only screen and (max-width: 360px) {
+        .fa-instagram  {         
+        margin-top: 5px;
+        background:white;
+        color:#125688;
+                }
+                } 
+        
+        @media only screen and (max-width: 360px) {
+        h3  {
+        visibility:hidden;
+        width:0;
+        height:0;
+        }
+        }   
+        
+        @media only screen and (max-width: 360px) {
+        .website  {
+        visibility:hidden;
+        width:0;
+        height:0;
+                   
+        }
+        }   
+            
+        @media only screen and (max-width: 360px) {
+        .phone  {
+        visibility:hidden;
+        width:0;
+        height:0;
+        }
+        }   
+      
+        
+        @media only screen and (max-width: 360px) {
+          .responsive-map  {
+              width: 350px;
+              max-width: 360px;
+              margin-left: 1px;
+              margin-right: 1px;
+            }
+            }   
+        
+            /*testing the overall wrapper structure for mobile*/
+            @media only screen and (max-width: 360px) {
+              main, header, h1, h2, p, footer {
+        display: block;
+        width: 360px;
+        max-width: 360px;
+        margin-left:0px;
+        margin-right:0px;
+        /*testing column count*/
+        column-count: 1;
+        align-items: center;
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+              }
+        }
+            @media only screen and (max-width: 360px) {
+            footer p {
+                  width: 360px;
+                  max-width: 360px;
+                  margin-left: 1px;
+                  font-size: x-small;
+                }
+                }   
+          
